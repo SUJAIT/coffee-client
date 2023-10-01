@@ -1,5 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+import NavBar from '../Design/NavBar';
 
 const AddCoffe = () => {
 
@@ -41,7 +42,9 @@ body:JSON.stringify(newCoffee)
 
 
     return (
-<div className='bg-[#F4F3F0] p-24'>
+      <>
+      <NavBar></NavBar>
+      <div className='bg-[#F4F3F0] p-24'>
   <h2 className='text-3xl font-extrabold'>Add a Coffee</h2>
   <form onSubmit={handleAddCoffee}>
     {/* Row Name and quatity is Start */}
@@ -127,6 +130,8 @@ body:JSON.stringify(newCoffee)
 
   </form>
 </div>
+      </>
+
         
     );
 };
